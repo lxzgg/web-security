@@ -17,7 +17,7 @@ public class AdminController {
      * 限制权限为auth才能访问
      */
     @PreAuthorize("hasAuthority('auth')")
-    @GetMapping("go1")
+    @GetMapping("go")
     public String getAdmin1() {
         return "777";
     }
@@ -26,7 +26,7 @@ public class AdminController {
      * 限制只能查询Id=1的用户
      */
     @PreAuthorize("#id==1")
-    @GetMapping("go")
+    @GetMapping("go1")
     public String getAdmin(Integer id) {
         System.out.println(id);
         return "666";

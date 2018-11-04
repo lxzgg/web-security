@@ -1,6 +1,6 @@
 package com.web;
 
-import com.web.config.WebSecurityConfig;
+import com.web.security.WebSecurityConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class Application extends AbstractAnnotationConfigDispatcherServletInitializer {
